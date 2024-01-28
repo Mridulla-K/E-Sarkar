@@ -1,0 +1,65 @@
+@keyframes rotateRWB {
+  0% { background-position: 0em 0em; }
+  100% { background-position: 100em 100em; }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e5e5e5;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: #FF9933;
+}
+
+strong {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1em;
+  margin-left: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Shrikhand', cursive;
+  margin: 0;
+  font-size: calc(800% + 1vmin);
+  line-height: 110%;
+  padding: 0 1em;
+}
+
+h1, h2, h3, h4, h5, h6::before {
+  content: '';
+  background: #e74c3c;
+  background: linear-gradient(to bottom, #FF9933 0%, #FF9933 33%, #fff 33%, #fff 66%, #138808 66%, #138808 100%);
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rotateRWB 100s linear 1s 1000;
+}
+
+.c-btn {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #FF9933;
+  border-radius: 3px;
+  display: inline-block;
+  padding: .5em 1em;
+  line-height: 1em;
+  text-decoration: none;
+  color: #FF9933;
+  margin-left: 1em;
+  background: #fff;
+  transition: .3s all ease-in-out;
+}
+
+.c-btn:hover {
+  background: #FF9933;
+  color: #fff;
+}
