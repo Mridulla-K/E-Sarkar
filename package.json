@@ -1,19 +1,41 @@
 {
-  "name": "esark",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "os-tmpdir",
+  "version": "1.0.2",
+  "description": "Node.js os.tmpdir() ponyfill",
+  "license": "MIT",
+  "repository": "sindresorhus/os-tmpdir",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo && ava"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "solc": "^0.8.24"
-  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "built-in",
+    "core",
+    "ponyfill",
+    "polyfill",
+    "shim",
+    "os",
+    "tmpdir",
+    "tempdir",
+    "tmp",
+    "temp",
+    "dir",
+    "directory",
+    "env",
+    "environment"
+  ],
   "devDependencies": {
-    "ethers": "^6.10.0",
-    "hardhat": "^2.19.4"
+    "ava": "*",
+    "xo": "^0.16.0"
   }
 }
