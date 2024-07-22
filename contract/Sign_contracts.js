@@ -13,7 +13,7 @@ const transactionObject = {
   data: '0x...', // Encoded contract method and parameters
 };
 
-// Sign the transaction
+// Sign the transaction to proceed with the vote
 const signedTransaction = await web3.eth.accounts.signTransaction(transactionObject, privateKey);
 
 // Send the signed transaction to the network
